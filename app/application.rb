@@ -3,7 +3,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    binding.pry
+  
 
 
     t = Time.new
@@ -12,6 +12,7 @@ class Application
     elsif t.hour > 12
       resp.write "Good Afternoon!"
     end
+      binding.pry
   end
 
 end
