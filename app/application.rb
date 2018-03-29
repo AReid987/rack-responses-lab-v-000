@@ -6,7 +6,7 @@ class Application
     binding.pry
 
 
-    t = Time.now
+    t = Time.new
     if t.hour < 12
       resp.write "Good Morning!"
     elsif t.hour > 12
