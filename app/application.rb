@@ -5,12 +5,12 @@ class Application
     resp = Rack::Response.new
 
 
-    if Time.new(2015,11,27,9,30).hour < 12
+    if Time.now.hour < 12
       resp.write "Good Morning!"
-    elsif Time.new(2015,11,27,14,30).hour > 12
+    elsif Time.now.hour > 12
       resp.write "Good Afternoon!"
     end
-    binding.pry 
+    binding.pry
     resp.finish
   end
 
