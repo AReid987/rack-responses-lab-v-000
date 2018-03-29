@@ -1,10 +1,10 @@
-require 'Pry'
+require 'pry'
 class Application
 
   def call(env)
     resp = Rack::Response.new
     binding.pry
-    
+
 
     t = Time.new
     if t.hour < 12
