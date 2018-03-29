@@ -5,9 +5,9 @@ class Application
 
 
 
-    if Time < 12
+    if Time.new < 12
       resp.write "Good Morning!"
-    elsif Time > 12
+    elsif Time.new > 12
       resp.write "Good Afternoon!"
     end
   end
