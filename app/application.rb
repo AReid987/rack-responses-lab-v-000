@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.now
-    binding.pry 
+    binding.pry
   end
 
 end
